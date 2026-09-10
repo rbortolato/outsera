@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      CSV_FILE_PATH: ${CSV_FILE_PATH:-/app/data/Movielist.csv}
